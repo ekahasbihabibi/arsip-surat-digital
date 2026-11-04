@@ -1,4 +1,4 @@
-# Arsip Surat — NestJS 
+# Arsip Surat Digital 
 
 Aplikasi web dengan frontend Bootstrap serta REST API berbasis NestJS, TypeScript dan PostgreSQL, dibuat ulang berdasarkan https://github.com/ekahasbihabibi/arsip-surat pada commit `5e6d4f556a87fe2916569041c87544884d2aa7e1`.
 
