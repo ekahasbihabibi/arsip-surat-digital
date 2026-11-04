@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: arsip
+      POSTGRES_PASSWORD: arsip_local
+      POSTGRES_DB: arsip
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - arsip_data:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+volumes:
+  arsip_data:
